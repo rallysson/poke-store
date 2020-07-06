@@ -7,7 +7,6 @@ import { Home } from "../Home";
 import { Product } from "../Product";
 import { Header } from "../Header";
 import { Cart } from "../Cart";
-import { Search } from "../Search";
 
 import { Drawer } from "../../components/Drawer";
 import { closeDrawer } from "./drawerSlice";
@@ -27,7 +26,7 @@ function App(): ReactElement {
     if (!pokes.length) {
       dispatch(fetchProducts(1));
     }
-  }, [dispatch]);
+  }, [dispatch, pokes.length]);
 
   return (
     <div className={`app ${visibleDrawer ? "app--drawer--visible" : ""}`}>
@@ -44,13 +43,6 @@ function App(): ReactElement {
         title="Carrinho"
       >
         <Cart />
-      </Drawer>
-      <Drawer
-        visible={visibleDrawer === DRAWERS_NAMES.SEARCH}
-        onClose={() => dispatch(closeDrawer())}
-        title="Busca"
-      >
-        <Search />
       </Drawer>
     </div>
   );

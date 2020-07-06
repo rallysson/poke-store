@@ -21,7 +21,7 @@ const getTypes = (abilities: Types[]) =>
 function Product(): ReactElement {
   const { idProduct } = useParams();
   const [product, setProduct] = useState<Pokemon>();
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const cartProducts = useSelector((state: RootState) => state.cart);
   const dispatch = useDispatch();
 
@@ -49,7 +49,7 @@ function Product(): ReactElement {
     }
 
     getProductByid();
-  }, [idProduct]);
+  }, [idProduct, results]);
 
   function handleAddItem(id: number) {
     const cartProduct = cartProducts.find(
