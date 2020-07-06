@@ -1,0 +1,29 @@
+.home {
+  padding: 20px;
+  min-height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__loader {
+  align-self: center;
+}
+
+.home__itemsQuantidade {
+  margin-bottom: 8px;
+  color: #a8a8a8;
+  font-size: 0.9rem;
+}
+
+.home__productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .home {
+    padding: 12px;
+  }
+}

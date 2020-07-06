@@ -1,0 +1,82 @@
+.product {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product__description {
+  margin: 12px;
+  font-size: 1rem;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__imageContainer {
+  position: relative;
+  width: 30%;
+}
+
+.card__discountPercentage {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 0;
+  top: 0;
+  background-color: #f44747;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.product__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product__installmets {
+  color: #8c8787;
+  margin-left: 8px;
+}
+
+.product__sizes {
+  margin-top: 8px;
+}
+
+.product__sizeButton {
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  margin: 0 2px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  font-weight: bold;
+}
+
+.product__sizeButton--selected {
+  background-color: white;
+  color: black;
+}
+
+.product__addCart {
+  margin-top: 12px;
+  font-weight: bold;
+  padding: 8px 24px;
+}
+
+.product__addCart:active {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .product__imageContainer {
+    width: 90%;
+  }
+
+  .product__image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.cart {
+  overflow: auto;
+  position: relative;
+  max-height: calc(100vh - 99px);
+}
+
+.cart__footer {
+  padding: 16px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}

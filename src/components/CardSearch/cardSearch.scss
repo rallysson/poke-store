@@ -1,0 +1,49 @@
+.cardSearch {
+  width: 100%;
+  display: flex;
+  margin: 12px 0;
+  position: relative;
+  padding: 8px 0;
+}
+
+.cardSearch::after {
+  height: 1px;
+  background-color: silver;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+}
+
+.cardSearch__imageContainer {
+  width: 25%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.cardSearch__title {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.cardSearch__data {
+  width: 75%;
+}
+
+.cardSearch__description {
+  color: silver;
+}
+
+.justifiedBetween {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.cartItem__buttons {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}

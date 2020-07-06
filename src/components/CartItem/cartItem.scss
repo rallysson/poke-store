@@ -1,0 +1,49 @@
+.cardItem {
+  width: 100%;
+  display: flex;
+  margin: 12px 0;
+  position: relative;
+  padding: 8px 0;
+}
+
+.cardItem::after {
+  height: 1px;
+  background-color: silver;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+}
+
+.cardItem__imageContainer {
+  width: 25%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.cardItem__title {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.cardItem__data {
+  width: 75%;
+}
+
+.cardItem__description {
+  color: silver;
+}
+
+.justifiedBetween {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+.cartItem__buttons {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}

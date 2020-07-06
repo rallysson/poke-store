@@ -1,0 +1,17 @@
+.search {
+  max-height: calc(100vh - 99px);
+  overflow: auto;
+}
+
+.search__input {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  padding: 8px;
+  width: 90%;
+}

@@ -1,0 +1,57 @@
+.card {
+  margin: 4px;
+  text-decoration: none;
+  color: black;
+  width: 250px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  // box-shadow: 0 0 5px silver;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px silver;
+}
+
+.card__discountPercentage {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 0;
+  background-color: #f44747;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.card__imageContainer {
+  width: 100%;
+}
+
+.card__image {
+  width: 100%;
+  background-color: white;
+}
+
+.card__descriptionContainer {
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__promotion {
+  text-decoration: line-through;
+  color: #8c8787;
+  margin-right: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: calc(50% - 16px);
+  }
+
+  .card__noImage {
+    width: 100%;
+  }
+}
